@@ -1,0 +1,24 @@
+/* .icons{
+    height:2rem;
+    gap: 2rem;
+    margin-left: 3rem;
+    justify-content: space-between;
+    display: flex;
+} */
+.icons {
+    display: flex;
+    align-items: center; 
+    justify-content: flex-start; 
+    gap: 10px; 
+    height: 2rem;
+    padding-left: 1.2rem;
+
+}
+.icons a {
+    display: inline-block; /* Ensures the anchor tags containing the images behave as inline-block elements */
+}
+.icons img {
+    height: 50px; 
+    width: auto; 
+    display: flexbox;
+}
