@@ -1,35 +1,65 @@
-.contact-details-card{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background: #130f2a;
-    border-radius: 0.65rem;
-    border: 1.5px solid #6751b9;
-    padding: 1.5rem;
-    margin-bottom: 2rem;
+.contact-container h5 {
+  font-size: 2.2rem;
+  font-weight: 600;
+  color: #f095f0;
+  text-align: center;
+  margin-bottom: 2.5rem;
+  position: relative;
 }
-.contact-details-card .icon{
-    width: 4rem;
-    height: 4rem;
-    display: flex;
-    align-items: center;
-    justify-content:center;
-    border-radius: 0.5rem;
-    background: #3d3072;
-    margin-bottom: 0.8rem;
+
+.contact-container h5::after {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 3px;
+  background: #35d93d;
+  margin: 10px auto 0;
+  border-radius: 10px;
 }
-.icon img{
-    width:1.8rem;
-    height:auto;
-    object-fit: contain;
+
+.contact-details-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(145deg, #16132f, #1c1a38);
+  border-radius: 0.75rem;
+  border: 1.5px solid #6751b9;
+  padding: 1.8rem 1.5rem;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width: 100%;
+  max-width: 300px;
+  margin: 0 auto 2rem;
 }
-.contact-details-card p{
-    font-size: 0.9rem;
-    font-weight: 400;
+
+.contact-details-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 24px rgba(103, 81, 185, 0.3);
 }
-.contact-container h5{
-    font-size: 2rem;
-    margin-left: 3.4rem;
-    text-align: center;
+
+.contact-details-card .icon {
+  width: 4rem;
+  height: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.6rem;
+  background: #3d3072;
+  margin-bottom: 1rem;
+}
+
+.icon img {
+  width: 1.8rem;
+  height: auto;
+  object-fit: contain;
+}
+
+.contact-details-card p {
+  font-size: 1rem;
+  font-weight: 400;
+  color: #c7c7c7;
+  text-align: center;
+  word-break: break-word;
+  line-height: 1.4rem;
 }
